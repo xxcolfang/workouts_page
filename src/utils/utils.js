@@ -15,6 +15,7 @@ import {
   ROWING_COLOR,
   ROAD_TRIP_COLOR,
   FLIGHT_COLOR,
+  RUN_COLOR
   RUN_COLOR,
   KAYAKING_COLOR
 } from './const';
@@ -30,7 +31,6 @@ const titleForShow = (run) => {
     !run.summary_polyline ? '(No map data for this workout)' : ''
   }`;
 };
-
 const formatPace = (d) => {
   if (Number.isNaN(d) || d == 0) return '0';
   const pace = (1000.0 / 60.0) * (1.0 / d);
@@ -38,7 +38,6 @@ const formatPace = (d) => {
   const seconds = Math.floor((pace - minutes) * 60.0);
   return `${minutes}'${seconds.toFixed(0).toString().padStart(2, '0')}"`;
 };
-
 const formatRunTime = (distance,pace) => {
   if (Number.isNaN(distance) || Number.isNaN(pace)) {
     return '0min';
@@ -51,14 +50,12 @@ const formatRunTime = (distance,pace) => {
   }
   return minutes + 'min';
 };
-
 // for scroll to the map
 const scrollToMap = () => {
   const el = document.querySelector('.fl.w-100.w-70-l');
   const rect = el.getBoundingClientRect();
   window.scroll(rect.left + window.scrollX, rect.top + window.scrollY);
 };
-
 const cities = chinaCities.map((c) => c.name);
 // what about oversea?
 const locationForRun = (run) => {
@@ -106,17 +103,14 @@ const locationForRun = (run) => {
   if (MUNICIPALITY_CITIES_ARR.includes(city)) {
     province = city;
   }
-
   return { country, province, city };
 };
-
 const intComma = (x = '') => {
   if (x.toString().length <= 5) {
     return x;
   }
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 };
-
 const pathForRun = (run) => {
   try {
     const c = mapboxPolyline.decode(run.summary_polyline);
@@ -129,7 +123,6 @@ const pathForRun = (run) => {
     return [];
   }
 };
-
 const geoJsonForRuns = (runs) => ({
   type: 'FeatureCollection',
   features: runs.map((run) => {
@@ -137,7 +130,6 @@ const geoJsonForRuns = (runs) => ({
     if (!points) {
       return null;
     }
-
     return {
       type: 'Feature',
       geometry: {
@@ -152,9 +144,7 @@ const geoJsonForRuns = (runs) => ({
     };
   }),
 });
-
 const geoJsonForMap = () => chinaGeojson;
-
 const titleForRun = (run) => {
   const runDistance = run.distance / 1000;
   const runHour = +run.start_date_local.slice(11, 13);
@@ -188,7 +178,6 @@ const titleForRun = (run) => {
       return RUN_TITLES.RUN_TITLE;
   }
 };
-
 const colorFromType = (workoutType) => {
   switch (workoutType) {
     case 'Run':
@@ -214,7 +203,6 @@ const colorFromType = (workoutType) => {
       return MAIN_COLOR;
   }
 };
-
 const applyToArray = (func, array) => func.apply(Math, array);
 const getBoundsForGeoData = (geoData) => {
   const { features } = geoData;
@@ -246,14 +234,12 @@ const getBoundsForGeoData = (geoData) => {
   }
   return { longitude, latitude, zoom };
 };
-
 const filterYearRuns = (run, year) => {
   if (run && run.start_date_local) {
     return run.start_date_local.slice(0, 4) === year;
   }
   return false;
 };
-
 const filterCityRuns = (run, city) => {
   if (run && run.location_country) {
     return run.location_country.includes(city);
@@ -261,9 +247,7 @@ const filterCityRuns = (run, city) => {
   return false;
 };
 const filterTitleRuns = (run, title) => titleForRun(run) === title;
-
 const filterTypeRuns = (run, type) => run.type === type;
-
 const filterAndSortRuns = (activities, item, filterFunc, sortFunc) => {
   let s = activities;
   if (item !== 'Total') {
@@ -271,12 +255,10 @@ const filterAndSortRuns = (activities, item, filterFunc, sortFunc) => {
   }
   return s.sort(sortFunc);
 };
-
 const sortDateFunc = (a, b) =>
   new Date(b.start_date_local.replace(' ', 'T')) -
   new Date(a.start_date_local.replace(' ', 'T'));
 const sortDateFuncReverse = (a, b) => sortDateFunc(b, a);
-
 export {
   titleForShow,
   formatPace,
