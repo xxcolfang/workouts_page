@@ -3,7 +3,6 @@ const MAPBOX_TOKEN =
     'pk.eyJ1IjoiYmVuLTI5IiwiYSI6ImNrZ3Q4Ym9mMDBqMGYyeXFvODV2dWl6YzQifQ.gSKoWF-fMjhzU67TuDezJQ';
 const MUNICIPALITY_CITIES_ARR = [
   '北京市',
-  '上海市',
   '广州市',
   '深圳市',
   '香港特别行政区',
