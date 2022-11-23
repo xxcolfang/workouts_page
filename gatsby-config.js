@@ -2,18 +2,18 @@ module.exports = {
   pathPrefix: '/running_page', // Change to `/running_page` when running on github pages
   siteMetadata: {
     siteTitle: 'Workouts Map',
-    siteUrl: 'https://ben29.xyz',
-    logo: 'https://avatars3.githubusercontent.com/u/6956444?s=460&u=97e1062227c4088db3c987146455245c6fa78441',
+    siteUrl: 'https://xxcolfang.github.io/workouts_page/',
+    logo: 'https://xxcolfang.github.io/workouts_page/',
     description: 'Personal Workouts Page',
     keywords: 'workouts, running, cycling, riding, roadtrip, hiking, swimming',
     navLinks: [
       {
-        name: 'Blog',
-        url: 'https://ben29.xyz',
+        name: 'xxcol',
+        url: 'https://xxcolfang.github.io/workouts_page/',
       },
       {
         name: 'About',
-        url: 'https://github.com/ben-29/running_page/blob/master/README-CN.md',
+        url: 'https://xxcolfang.github.io/workouts_page/',
       },
     ],
   },
@@ -66,7 +66,7 @@ module.exports = {
         background_color: '#e1e1e1',
         theme_color: '#e1e1e1',
         display: 'standalone',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png-old', // This path is relative to the root of the site.
       },
     },
     {
