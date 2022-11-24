@@ -51,11 +51,6 @@ TYPE_DICT = {
     "running": "Run",
     "RUN": "Run",
     "Run": "Run",
-    "cycling": "Ride",
-    "CYCLING": "Ride",
-    "Ride": "Ride",
-    "VirtualRide": "VirtualRide",
-    "indoor_cycling": "Indoor Ride",
     "walking": "Hike",
     "hiking": "Hike",
     "Walk": "Hike",
@@ -70,8 +65,6 @@ TYPE_DICT = {
 
 MAPPING_TYPE = [
     "Hike",
-    "Ride",
-    "VirtualRide",
     "Rowing",
     "Run",
     "Swim",
