@@ -37,8 +37,8 @@ const HALF_MARATHON_RUN_TITLE = IS_CHINESE ? '半程马拉松' : 'Half Marathon'
 const RUN_TITLE = IS_CHINESE ? '跑步' : 'Run';
 const SWIM_TITLE = IS_CHINESE ? '游泳' : 'Swim';
 
-const RIDE_TITLE = IS_CHINESE ? '骑行' : 'Ride';
-const INDOOR_RIDE_TITLE = IS_CHINESE ? '室内骑行' : 'Indoor Ride';
+# const RIDE_TITLE = IS_CHINESE ? '骑行' : 'Ride';
+# const INDOOR_RIDE_TITLE = IS_CHINESE ? '室内骑行' : 'Indoor Ride';
 const HIKE_TITLE = IS_CHINESE ? '徒步' : 'Hike';
 const ROWING_TITLE = IS_CHINESE ? '划船' : 'Rowing';
 const KAYAKING_TITLE = IS_CHINESE ? '皮划艇' : 'Kayaking';
