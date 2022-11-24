@@ -37,7 +37,7 @@ const HALF_MARATHON_RUN_TITLE = IS_CHINESE ? '半程马拉松' : 'Half Marathon'
 const RUN_TITLE = IS_CHINESE ? '跑步' : 'Run';
 const SWIM_TITLE = IS_CHINESE ? '游泳' : 'Swim';
 
-# const RIDE_TITLE = IS_CHINESE ? '骑行' : 'Ride';
+const RIDE_TITLE = IS_CHINESE ? '骑行' : 'Ride';
 const INDOOR_RIDE_TITLE = IS_CHINESE ? '室内骑行' : 'Indoor Ride';
 const HIKE_TITLE = IS_CHINESE ? '徒步' : 'Hike';
 const ROWING_TITLE = IS_CHINESE ? '划船' : 'Rowing';
@@ -91,7 +91,7 @@ const red = 'rgb(255,0,0)';//大红色
 export const NEED_FIX_MAP = false;
 export const MAIN_COLOR = green;
 export const RUN_COLOR = yellow;
-# export const RIDE_COLOR = green;
+export const RIDE_COLOR = green;
 export const VIRTUAL_RIDE_COLOR = veryPeri;
 export const HIKE_COLOR = pink;
 export const SWIM_COLOR = gold;
