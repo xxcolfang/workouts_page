@@ -168,8 +168,8 @@ const titleForRun = (run) => {
         return RUN_TITLES.FULL_MARATHON_RUN_TITLE;
       }
       return RUN_TITLES.RUN_TITLE;
-    case 'Ride':
-      return RUN_TITLES.RIDE_TITLE;
+   /* case 'Ride':
+      return RUN_TITLES.RIDE_TITLE;  */
     case 'Indoor Ride':
       return RUN_TITLES.INDOOR_RIDE_TITLE;
     case 'Hike':
