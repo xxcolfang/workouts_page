@@ -52,8 +52,6 @@ TYPE_DICT = {
     "RUN": "Run",
     "Run": "Run",
     "track_running": "Run",
-   /* "walking": "Hike",
-      "Walk": "Hike", */
     "hiking": "Hike",
     "Hike": "Hike",
     "Swim": "Swim",
