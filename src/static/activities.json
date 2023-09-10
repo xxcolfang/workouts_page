@@ -3001,16 +3001,16 @@
 },
 {
 "run_id": 1550360138000,
-"name": "\u5858\u6717\u5c71",
-"distance": 1582.0858659101405,
-"moving_time": "0:30:37",
+"name": "\u6df1\u5733\u5e02 \u5f92\u6b65",
+"distance": 1493.4686212909735,
+"moving_time": "0:30:26",
 "type": "Hike",
 "start_date": "2019-02-16 23:35:38",
 "start_date_local": "2019-02-17 07:35:38",
 "location_country": "\u9f99\u73e0\u516d\u8def, \u6843\u6e90\u8857\u9053, \u5357\u5c71\u533a, \u6df1\u5733\u5e02, \u5e7f\u4e1c\u7701, 518000, \u4e2d\u56fd",
-"summary_polyline": "suvhCeetvT]mEsA@kGfEyBwAe@mEP{AyBuAYiBeCm@d@cAU[{Ab@yAWo@\\OWeAb@oBmAwDlDuE`AYKYcDs@mA",
-"average_heartrate": 131.0,
-"average_speed": 0.8612334599401962,
+"summary_polyline": "{uvhC_etvTDmBe@}A}Ef@uB~CoB_Ae@mBDoE{BaBe@}AmBi@DgBgBb@uA_@mCn@{AeAmD~CaFbA_@[iAwE",
+"average_heartrate": 130.0,
+"average_speed": 0.8178908112217818,
 "source": "Garmin Connect",
 "streak": 1
 },
@@ -15013,5 +15013,20 @@
 "average_speed": 3.4146436786246164,
 "source": "Garmin Connect",
 "streak": 3
+},
+{
+"run_id": 1694296593000,
+"name": "\u6df1\u5733\u5e02 \u8dd1\u6b65",
+"distance": 30078.087465334396,
+"moving_time": "2:34:56",
+"type": "Run",
+"start_date": "2023-09-09 21:56:33",
+"start_date_local": "2023-09-10 05:56:33",
+"location_country": "\u5858\u5bb6\u793e\u533a, \u51e4\u51f0\u8857\u9053, \u5149\u660e\u533a, \u6df1\u5733\u5e02, \u5e7f\u4e1c\u7701, 518107, \u4e2d\u56fd",
+"summary_polyline": "suviC{sjvTsArBYsBi@T_Qj[m@nEb@zQu@vDoKrLoCjIoGbN}@r@qB?NfE}DhCqF~BwUnDkOMFhEqA^mCYaH}DyEk@o^`@sHtAHcA}@RKv@qDbAqA?mDgBQcAcDeBoF}@qTzBmLzE_Gr@mT_DgMsGuBk@oNmC_R}BuAk@{L`C{PrI}@@gDpAuIlF_DlDqPtW{DvEwKlIcChDmD~MmBlMcMrj@eAjK@fEdAhFp@hk@`C|JpKnPzFpRxKtZJhBzFjRs@bQyH`e@iCxH|BiFjIwg@r@aQc^igAeKwN_ByKk@qd@aAcOnAiMtL}i@zCqQbCeJ|AqCxMsKhFuGdNyTpDaEhHoExZ}NPZhCQpFkAjAp@jRtB~ObDnNhHbRfCzHu@nKsE`TeCTnFf@|An\\sB@jAn@k@z@J|Dw@``@a@tC^bIhEjCThAe@EgE|ONpUwDzEuBjEeDYkDzADbBcA~IoSh@eCpCyDxFuFbAgF_@sPh@eFhBiD~BcCVsBdIoNX?d@lBbEaF",
+"average_heartrate": 151.0,
+"average_speed": 3.2355946068561097,
+"source": "Garmin Connect",
+"streak": 1
 }
 ]
